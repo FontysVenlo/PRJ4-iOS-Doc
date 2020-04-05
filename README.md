@@ -13,12 +13,45 @@ Use *lb4 app* to create the backend application:
 ![ScreenShot](/loopback4/lb4app.png) 
 
 ### Create the model
-To create the model *Employee* use the command *lb4 model*:
+To create the model *Employee* with unique id *id*, *firstName* and *lastName* use the command *lb4 model*:
 
 ![ScreenShot](/loopback4/lb4model.png) 
 
 ### Create the datasource
-Once the model is created we need to add the datasource. In this example it will be a relational in memory database. We will populate that datasource by defining a file *./data/db.json* providing initial values.
+Once the model is created we need to add the datasource defining where data resides. In this example it will be a relational in memory database. We will populate that datasource by defining a file *./data/db.json* providing initial values.
 
 ![ScreenShot](/loopback4/lb4datasource.png)
+
+
+Be careful to add the file *./data/db.json* seen from root level. The file provides 4 employees, which will initialize the database.
+
+```{
+  "ids": {
+    "Employees": 4
+  },
+  "models": {
+    "Employees": {
+      "1": "{\"firstname\":\"Dark\",\"lastname\":\"Vader\",\"id\":1}",
+      "2": "{\"firstname\":\"Jan\",\"lastname\":\"Willem\",\"id\":2}",
+      "3": "{\"firstname\":\"Marilyn\",\"lastname\":\"Monroe\",\"id\":3}",
+      "4": "{\"firstname\":\"Clint\",\"lastname\":\"Eastwood\",\"id\":4}"
+    }
+  }
+}
+```
+
+
+
+### Create the repository
+The repository links model and datasource. It is created via *lb4 repository*:
+
+![ScreenShot](/loopback4/lb4repository.png)
+
+
+### Create the controller
+The controller provides the endpoint(s) of our CRUD REST API. For that it links to the repository. 
+
+![ScreenShot](/loopback4/lb4controller.png)
+
+
 

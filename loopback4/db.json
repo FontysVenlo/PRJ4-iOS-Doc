@@ -1,0 +1,13 @@
+{
+  "ids": {
+    "Employees": 4
+  },
+  "models": {
+    "Employees": {
+      "1": "{\"firstname\":\"Dark\",\"lastname\":\"Vader\",\"id\":1}",
+      "2": "{\"firstname\":\"Jan\",\"lastname\":\"Willem\",\"id\":2}",
+      "3": "{\"firstname\":\"Marilyn\",\"lastname\":\"Monroe\",\"id\":3}",
+      "4": "{\"firstname\":\"Clint\",\"lastname\":\"Eastwood\",\"id\":4}"
+    }
+  }
+}

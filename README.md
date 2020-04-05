@@ -9,4 +9,4 @@ The backend consists of a REST API providing CRUD access to table *Employee* and
 
 ### Create the app
 Use *lb4 app* to create the backend application:
-![ScreenShot](https://raw.github.com/{g.schwake@fontys.nl}/{FontysVenlo/PRJ4-iOS-Doc}/{master}/{loopback4/lb4app})
+![ScreenShot](https://raw.github.com/{g.schwake@fontys.nl}/{FontysVenlo/PRJ4-iOS-Doc}/{master}/{loopback4/lb4app}) 

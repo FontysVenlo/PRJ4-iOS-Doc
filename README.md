@@ -27,7 +27,7 @@ Once the model is created we need to add the datasource defining where data resi
 ![ScreenShot](/loopback4/lb4datasource.png)
 
 
-Be careful to add the file *./data/db.json* seen from root level. The file provides 4 employees, which will initialize the database.
+Be careful to add the file *./data/db.json* seen from root level. The file provides 4 employees, with which the database will be initialized. The file can be found in the repository (/loopback4/db.json).
 
 ```{
   "ids": {

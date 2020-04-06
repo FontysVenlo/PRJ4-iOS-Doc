@@ -14,7 +14,8 @@
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-# PRJ4-iOS-Doc
+**Project 4**
+
 Documentation and tutorial for iOS/Swift.
 
 # HTTP Requests

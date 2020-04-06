@@ -3,9 +3,8 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
 
-- [PRJ4-iOS-Doc](#prj4-ios-doc)
 - [HTTP Requests](#http-requests)
-  - [Backend: Employee REST API](#employee-rest-api)
+  - [Backend: Employee REST API](#backend-employee-rest-api)
     - [Create the app](#create-the-app)
     - [Create the model](#create-the-model)
     - [Create the datasource](#create-the-datasource)

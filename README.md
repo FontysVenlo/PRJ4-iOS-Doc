@@ -77,9 +77,11 @@ Use the API Explorer at *http://[::1]:3000* to get a feeling for the API. With P
 ```{
   "firstName": "Jan",
   "lastName": "Holland"
-}```
+}
+```
 
-an employee is added. The test is done via GET/employees and shows 
+an employee is added. The test is done via GET/employees and shows the new employee.
+![ScreenShot](/loopback4/apiExplorerGetEmployees.png)
 
 
 

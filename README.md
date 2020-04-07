@@ -134,10 +134,63 @@ The call to the url is made when resume() is called on the task (dataTask). At t
     }
 ```
 
-### JSON Decoding
-Add class Employee
-Extend testGetEmployees
+### JSON
 
+We use JSONSerialization to get JSON from the data. This is a very simple example. To decode JSON have a look at the Codable/Encodable/Decodable protocols and try it yourself. It only makes sense to go for JSON content when there is data. Therefore we create our JSON after the check on data existence.
+
+ViewController.swift should by now look like this
+
+```
+class ViewController: UIViewController {
+    
+    
+    @IBAction func getEmployees(_ sender: UIButton) {
+        testGetEmployees()
+    }
+    
+    // Simple GET request
+    func testGetEmployees() {
+        let defaultSession = URLSession(configuration: .default)
+        let url = URL(string: "http://[::1]:3000/employees?")
+        
+        // Forced unwrap of url - we set it ourselves
+        let task = defaultSession.dataTask(with: url!) { data, response, error in
+
+            // Print Error
+            if let error = error  {
+                print ("error: \(error)")
+            }
+            
+            // Print Data
+            if let data = data  {
+                print ("data: \(data)")
+                
+                // Print JSON
+                do {
+                    let json = try JSONSerialization.jsonObject(with: data, options: [])
+                    print(json)
+                } catch {
+                    print("JSON error: \(error.localizedDescription)")
+                }
+            }
+            
+            // Print Response
+            if let response = response  {
+                print ("response: \(response)")
+            }
+            
+        }
+
+        // Now do the work
+        task.resume()
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view.
+    }
+}
+```
 
 
 

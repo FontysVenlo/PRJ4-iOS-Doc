@@ -70,4 +70,16 @@ The controller provides the endpoint(s) of our CRUD REST API. For that it links 
 ![ScreenShot](/loopback4/lb4controller.png)
 
 
+### Test the app
+Assuming that you are already in the correct directory *employee* the app can be started using ```npm start```.
+Use the API Explorer at *http://[::1]:3000* to get a feeling for the API. With POST/employee and the Request Body 
+
+```{
+  "firstName": "Jan",
+  "lastName": "Holland"
+}```
+
+an employee is added. The test is done via GET/employees and shows 
+
+
 

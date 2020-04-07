@@ -84,5 +84,62 @@ Use the API Explorer at *http://[::1]:3000* to get a feeling for the API. With P
 an employee is added. The test is done via GET/employees and shows the new employee.
 ![ScreenShot](/loopback4/apiExplorerGetEmployees.png)
 
+## Frontend
+Intro URLSession, URL, dataTask, Alamofire, Completion Handler/Closure
+
+### Create GUI with button
+Select the Main.storyboard and add a button labelled *Get/Employees*. Do this via the *+* sign on the top right of the window.
+Open the assistant editor via the menu Editor -> Assistant. Control drag the button to the ViewController.swift file just beneath the class declaration. Configure Connection: Action, name: getEmployees, type: UIButton. This defines the function getEmployees() which will be called whenever the button is pressed. Inside the function body add *testGetEmployees()*.
+The only thing *getEmployees()* does is call the yet to be defined function *testGetEmployees()*. 
+
+```
+@IBAction func getEmployees(_ sender: UIButton) {
+        testGetEmployees()
+}
+```
+
+### Simple GET - error/response/data
+With *testGetEmployees* we will use the default URLSession. The url is the one we used with the API explorer. Whenever you are not sure about urls and parameters use the API explorer to test things.
+With the session and url defined a so called dataTask is used to combine these two and to define a unit of work. The dataTask is called with the url. The completion handler defines data, error and response which are the variables delivering the result. 
+The call to the url is made when resume() is called on the task (dataTask). At this time the completion handler (closure) is used to process the received data, i.e. data, error and response. Here we do a simple print of returned values.
+
+```
+ // Simple GET request
+    func testGetEmployees() {
+        let defaultSession = URLSession(configuration: .default)
+        let url = URL(string: "http://[::1]:3000/employees?")
+        
+        // Forced unwrap of url - we set it ourselves
+        let task = defaultSession.dataTask(with: url!) { data, response, error in
+
+            // Error
+            if let error = error  {
+                print ("error: \(error)")
+            }
+            
+            // Data
+            if let data = data  {
+                print ("data: \(data)")
+            }
+            
+            // Response
+            if let response = response  {
+                print ("response: \(response)")
+            }
+            
+        }
+
+        // Now do the work
+        task.resume()
+    }
+```
+
+### JSON Decoding
+Add class Employee
+Extend testGetEmployees
+
+
+
+
 
 

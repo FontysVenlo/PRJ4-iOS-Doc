@@ -10,6 +10,7 @@
     - [Create the datasource](#create-the-datasource)
     - [Create the repository](#create-the-repository)
     - [Create the controller](#create-the-controller)
+    - [Test the app](#test-the-app)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 

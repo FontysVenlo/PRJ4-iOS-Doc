@@ -11,6 +11,10 @@
     - [Create the repository](#create-the-repository)
     - [Create the controller](#create-the-controller)
     - [Test the app](#test-the-app)
+  - [Frontend](#frontend)
+    - [Create GUI with button](#create-gui-with-button)
+    - [Simple GET - error/response/data](#simple-get---errorresponsedata)
+    - [JSON](#json)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 

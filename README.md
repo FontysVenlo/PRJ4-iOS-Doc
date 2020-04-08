@@ -26,7 +26,7 @@ Documentation and tutorial for iOS/Swift.
 The example consists of a locally running Loopback backend providing a REST API to a simple table and a Swift application utilizing it.
 
 ## Backend: Employee REST API
-The backend consists of a REST API providing CRUD access to table *Employee* and is created via Loopback 4. If you do not have any Loopback 4 background, you are advised to first have a look at Loopback 4 Getting started (http://loopback.io/doc/en/lb4/Getting-started.html) for setting up the environment as well as the Loopback 4 Todo tutorial (https://loopback.io/doc/en/lb4/todo-tutorial.html) for an overview of the steps necessary to build an app using Loopback4.
+The backend consists of a REST API providing CRUD access to table *Employee* and is created via Loopback 4. If you do not have any Loopback 4 background, you are advised to first have a look at [Loopback 4 Getting started](http://loopback.io/doc/en/lb4/Getting-started.html) for setting up the environment as well as the [Loopback 4 Todo tutorial](https://loopback.io/doc/en/lb4/todo-tutorial.html) for an overview of the steps necessary to build an app using Loopback4.
 
 ### Create the app
 Use *lb4 app* to create the backend application:
@@ -91,14 +91,14 @@ an employee is added. The test is done via GET/employees and shows the new emplo
 ## Frontend
 
 ### URLSession and Alamofire
-The simple frontend app is to show how https request are done with *URLSession*. Besides what Swift offers, there is also the option to use a framework wrapping the URLSession functionality. One of the most widely used frameworks in this area is *Alamofire* for which there also is elaborated documentation (https://github.com/Alamofire/Alamofire). Groups are allowed to use this *Alamofire* instead of *URLSession*. This focus of this example is on *URLSession*.
+The simple frontend app is to show how https request are done with *URLSession*. Besides what Swift offers, there is also the option to use a framework wrapping the URLSession functionality. One of the most widely used frameworks in this area is *Alamofire* for which there also is [elaborated documentation](https://github.com/Alamofire/Alamofire). Groups are allowed to use this *Alamofire* instead of *URLSession*. The focus of this example is on *URLSession*.
+
+For an introduction into iOS networking and an introduction of *URLSession*, *URLSessionConfiguration* and *URLSessionDataTask* as well as the *completion handler* we refer to a well done blog entry by Reinder [Networking In Swift With URLSession](https://learnappmaking.com/urlsession-swift-networking-how-to/). 
 
 
-Intro URLSession, URL, dataTask, Alamofire, Completion Handler/Closure
-
-### Create GUI with button
-The first step is to create a new iOS single view app. Select the Main.storyboard and add a button labelled *Get/Employees*. Do this via the *+* sign on the top right of the window.
-Open the assistant editor via the menu Editor -> Assistant. Control drag the button to the ViewController.swift file just beneath the class declaration. Configure Connection: Action, name: getEmployees, type: UIButton. This defines the function getEmployees() which will be called whenever the button is pressed. Inside the function body add *testGetEmployees()*.
+### Create the simple GUI
+The first step is to create a new iOS single view app. Select the *Most ain.storyboard* and add a button labelled *Get/Employees*. Do this via the *+* sign which is located at the top right of the window.
+Open the assistant editor via the menu *Editor -> Assistant*. Control drag the button to the *ViewController.swift* file just beneath the class declaration. Configure *Connection: Action, name: getEmployees, type: UIButton*. This defines the *IBAction getEmployees()* which will be called whenever the button is pressed. Inside the function body add *testGetEmployees()*.
 The only thing *getEmployees()* does is call the yet to be defined function *testGetEmployees()*. 
 
 ```
@@ -108,9 +108,9 @@ The only thing *getEmployees()* does is call the yet to be defined function *tes
 ```
 
 ### Simple GET - error/response/data
-With *testGetEmployees* we will use the default URLSession. The url is the one we used with the API explorer. Whenever you are not sure about urls and parameters use the API explorer to test things.
+With *testGetEmployees* we will use the default *URLSession*. The url is the one we used with the API explorer. Whenever you are not sure about urls and parameters use the API explorer to test things.
 With the session and url defined a so called dataTask is used to combine these two and to define a unit of work. The dataTask is called with the url. The completion handler defines data, error and response which are the variables delivering the result. 
-The call to the url is made when resume() is called on the task (dataTask). At this time the completion handler (closure) is used to process the received data, i.e. data, error and response. Here we do a simple print of returned values.
+The call to the url is made when *resume()* is called on the task (dataTask). At this time the completion handler (closure) is used to process the received data, i.e. data, error and response. Here we do a simple print of returned values.
 
 ```
  // Simple GET request
@@ -145,9 +145,9 @@ The call to the url is made when resume() is called on the task (dataTask). At t
 
 ### JSON
 
-We use JSONSerialization to get JSON from the data. This is a very simple example. To decode JSON have a look at the Codable/Encodable/Decodable protocols and try it yourself. It only makes sense to go for JSON content when there is data. Therefore we create our JSON after the check on data existence.
+We use *JSONSerialization* to get JSON from the data. This is a very simple example. It only makes sense to go for JSON content when there is data. Therefore we create our JSON after the check on data existence.
 
-ViewController.swift should by now look like this
+*ViewController.swift* should by now look like this
 
 ```
 class ViewController: UIViewController {

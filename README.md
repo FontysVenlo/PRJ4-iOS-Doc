@@ -26,7 +26,7 @@ Documentation and tutorial for iOS/Swift.
 The example consists of a locally running Loopback backend providing a REST API to a simple table and a Swift application utilizing it.
 
 ## Backend: Employee REST API
-The backend consists of a REST API providing CRUD access to table *Employee* and is created via Loopback 4. If you do not have any Loopback 4 background, you are advised to first have a look at [Loopback 4 Getting started!] (https://loopback.io/doc/en/lb4/Getting-started.html) for setting up the environment as well as the Loopback 4 Todo tutorial (https://loopback.io/doc/en/lb4/todo-tutorial.html) for an overview of the steps necessary to build an app using Loopback4.
+The backend consists of a REST API providing CRUD access to table *Employee* and is created via Loopback 4. If you do not have any Loopback 4 background, you are advised to first have a look at Loopback 4 Getting started (http://loopback.io/doc/en/lb4/Getting-started.html) for setting up the environment as well as the Loopback 4 Todo tutorial (https://loopback.io/doc/en/lb4/todo-tutorial.html) for an overview of the steps necessary to build an app using Loopback4.
 
 ### Create the app
 Use *lb4 app* to create the backend application:
@@ -89,10 +89,15 @@ an employee is added. The test is done via GET/employees and shows the new emplo
 ![ScreenShot](/loopback4/apiExplorerGetEmployees.png)
 
 ## Frontend
+
+### URLSession and Alamofire
+The simple frontend app is to show how https request are done with *URLSession*. Besides what Swift offers, there is also the option to use a framework wrapping the URLSession functionality. One of the most widely used frameworks in this area is *Alamofire* for which there also is elaborated documentation (https://github.com/Alamofire/Alamofire). Groups are allowed to use this *Alamofire* instead of *URLSession*. This focus of this example is on *URLSession*.
+
+
 Intro URLSession, URL, dataTask, Alamofire, Completion Handler/Closure
 
 ### Create GUI with button
-Select the Main.storyboard and add a button labelled *Get/Employees*. Do this via the *+* sign on the top right of the window.
+The first step is to create a new iOS single view app. Select the Main.storyboard and add a button labelled *Get/Employees*. Do this via the *+* sign on the top right of the window.
 Open the assistant editor via the menu Editor -> Assistant. Control drag the button to the ViewController.swift file just beneath the class declaration. Configure Connection: Action, name: getEmployees, type: UIButton. This defines the function getEmployees() which will be called whenever the button is pressed. Inside the function body add *testGetEmployees()*.
 The only thing *getEmployees()* does is call the yet to be defined function *testGetEmployees()*. 
 

@@ -19,10 +19,6 @@
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-**Project 4**
-
-Documentation and tutorial for iOS/Swift.
-
 # HTTP Requests
 The example consists of a locally running Loopback backend providing a REST API to a simple table and a Swift application utilizing it.
 
@@ -144,7 +140,7 @@ The call to the url is made when *resume()* is called on the task (dataTask). At
     }
 ```
 
-### JSON
+### Print JSON
 
 We use *JSONSerialization* to get JSON from the data. This is a very simple example. It only makes sense to go for JSON content when there is data. Therefore we create our JSON after the check on data existence.
 
@@ -201,6 +197,28 @@ class ViewController: UIViewController {
     }
 }
 ```
+
+### Decode JSON
+Now that we have checked that we receive JSON from the http request, the next step is to convert JSON into an object. For this we use the *Codable* protocol, which covers decoding via the *Decodable* protocol as well as encoding via the *Encodable* protocol. First we define the class *Employee* as the object structure we want to convert the JSON data into.
+
+For details you are referred to the Swift documentation by Apple as well as the good introduction by Wenderlich [Encoding and Decoding in Swift](https://www.raywenderlich.com/3418439-encoding-and-decoding-in-swift).
+
+```
+class Employee: Codable {
+    
+    var id: Int
+    var firstName: String
+    var lastName: String
+    
+    init(id: Int, firstName: String, lastName: String) {
+        self.id = id
+        self.firstName = firstName
+        self.lastName = lastName
+    }
+}
+```
+
+
 
 
 

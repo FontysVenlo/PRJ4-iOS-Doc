@@ -1,7 +1,7 @@
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-
+**PRJ4 iOS/Swift Documentation**
 
 - [HTTP Requests](#http-requests)
   - [Backend: Employee REST API](#backend-employee-rest-api)
@@ -12,7 +12,8 @@
     - [Create the controller](#create-the-controller)
     - [Test the app](#test-the-app)
   - [Frontend](#frontend)
-    - [Create GUI with button](#create-gui-with-button)
+    - [URLSession and Alamofire](#urlsession-and-alamofire)
+    - [Create the simple GUI](#create-the-simple-gui)
     - [Simple GET - error/response/data](#simple-get---errorresponsedata)
     - [JSON](#json)
 

@@ -307,8 +307,6 @@ class ViewController: UIViewController {
 
 ## Push Notification - APN
 
-MVJHJ8K8MU
-
 Push notifications are routed via the *Apple Push Notification* (APN). For usage of APN a certificate or a key is required. 
 
 There is a Push Notification Key available *MVJHJ8K8MU* which can be used instead of the certificate: [MVJHJ8K8MU.p8](https://connect.fontys.nl/instituten/fhtenl_studies/studies/INF/APPS/StudyMaterial/AuthKey_MVJHJ8K8MU.p8)
@@ -317,10 +315,7 @@ In order to be provided with a certificate send the name of your app G<group num
 The APP Identifier *nl.fontys.apps20.<group app name> with the corresponding certificate will be created. For the example with group 8 this would be the APP ID *nl.fontys.apps20.G8ProductPriceAlert*.
 When you receive the certificate it has to be double clicked in order to have it added to your keychain.
  
-  
-## Push Notification - Backend
-A node.js module for interfacing with the Apple Push Notification Service is [*apn*](https://www.npmjs.com/package/apn).
-Tutorials and documentation can be found on the website.
+For further information on Push Notification - Frontend and/or Push Notification - Backend have a look at the corresponding Assignment.
 
 
 # Assignments
@@ -369,10 +364,11 @@ Walk through the above given example.
 1. Being able to use the Pusher Notification app to send a push notification and receive/process that notification on the frontend.
 
 ## Assignment Push Notification - Backend
-Walk through the documentation given by the [*apn* framework]()
+A node.js module for interfacing with the Apple Push Notification Service is *apn*. Tutorials and documentation can be found on the website.
+Walk through the documentation given by the [*apn* framework](https://www.npmjs.com/package/apn).
 
 **Deliverables**
-1. Being able how push notifications are implemented/used with the *apn* framework(https://www.npmjs.com/package/apn)).
+1. Being able how push notifications are implemented/used with the *apn* framework.
 
 
 ## Assignment HTTP Request

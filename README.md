@@ -21,7 +21,7 @@
   - [Camera](#camera)
   - [GPS](#gps)
   - [Map](#map)
-  - [Push Notification - Frontend](#push-notification---frontend)
+  - [Push Notification - APN](#push-notification---apn)
   - [Push Notification - Backend](#push-notification---backend)
 - [Assignments](#assignments)
   - [Assignment Intro Swift / Basic GUI](#assignment-intro-swift--basic-gui)

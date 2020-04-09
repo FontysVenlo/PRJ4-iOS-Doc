@@ -303,25 +303,60 @@ class ViewController: UIViewController {
 
 # Assignments
 
-## Assignment Swift
+## Assignment Intro Swift / Basic GUI
+Do tutorials on the following topics. Either use the given tutorials or use tutorial that you come across and think useful.
 
 1. Do in your own playground: [A Swift Tour and LANGUAGE GUIDE (The Basics)](https://docs.swift.org/swift-book/)
 1. Swift Tutorial Part 1: [Expressions, Variables & Constants](https://www.raywenderlich.com/6338-swift-tutorial-part-1-expressions-variables-and-constants)
 1. Swift Tutorial Part 2: [Types and Operations](https://www.raywenderlich.com/6364-swift-tutorial-part-2-types-and-operations)
 1. Swift Tutorial Part 3: [Flow Control](https://www.raywenderlich.com/6366-swift-tutorial-part-3-flow-control)
-• Do the iOS Intro: [Your first iOS App](https://www.raywenderlich.com/5993-your-first-ios-and-uikit-app)
+1. Do the iOS Intro: [Your first iOS App](https://www.raywenderlich.com/5993-your-first-ios-and-uikit-app)
 
-Deliverables:
+**Deliverables:**
 1. Being able to explain the basic Swift components
 1. Being able to explain Swift specific constructs like Optionals, Tuples, Protocols, Extensions, Closures and Error Handling.
 1. Being able to explain the basic concepts of an iOS app.
 
-## Assignment Loopback
-## Assignment GUI
-## Assignment HTTP Request
-## Assignment Authentication
+## Assignment Sensors and JSON De/Encoding
+Do tutorials on the following topics. Either use the given tutorials or use tutorial that you come across and think useful.
 
-# Links
+1. Camera - [Take a photo](https://www.ioscreator.com/tutorials/take-photo-ios-tutorial)
+1. For details have a look at the [Apple Developer Documentation](https://developer.apple.com/documentation/avfoundation/cameras_and_media_capture)
+1. Maps: Show position on map. See *MapKit_Example.playground* on the portal.
+1. GPS: Familiarize yourself with *CoreLocation* and *CLLocationManager*.
+1. JSON De-/Encoding: [Working with Codable and JSON in Swift](https://learnappmaking.com/codable-json-swift-how-to/)
+
+**Deliverables**
+1. Camera: Being able to take a photo
+1. Map: Being able to show a given position on a map
+1. GPS: Being able to get the current position
+1. GPS: Being able to get longitude/latitude from address and vice versa
+1. JSON: Being able to decode from JSON to an object
+1. JSON: Being able to encode from an object to JSON
+
+## Assignment Push Notification
+Walk through the above given examples. 
+
+**Deliverables**
+1. Being able to receive and work on push notifications on the frontend
+1. Being able to explain how push notifications work on the backend (node.js)
+
+## Assignment HTTP Request
+Do the Backend/Frontend example from above.
+
+**Deliverables**
+1. Making HTTP Requests with URLSession (or Alamofire)
+2. Being able to do (async) unit tests 
+
+## Assignment Authentication
+Do tutorials on the following topics. Either use the given tutorials or use tutorial that you come across and think useful.
+
+1. Do the authentication tutorial [Loopback Authentication(https://connect.fontys.nl/instituten/fhtenl_studies/studies/INF/APPS/StudyMaterial/Loopback_Authentication.pdf)
+
+**Deliverables**
+1. Being able to explain how authentication works and is implemented. 
+
+
 
 
 

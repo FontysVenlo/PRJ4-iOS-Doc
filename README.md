@@ -26,7 +26,8 @@
 - [Assignments](#assignments)
   - [Assignment Intro Swift / Basic GUI](#assignment-intro-swift--basic-gui)
   - [Assignment Sensors and JSON De/Encoding](#assignment-sensors-and-json-deencoding)
-  - [Assignment Push Notification](#assignment-push-notification)
+  - [Assignment Push Notification - Frontend](#assignment-push-notification---frontend)
+  - [Assignment Push Notification - Backend](#assignment-push-notification---backend)
   - [Assignment HTTP Request](#assignment-http-request)
   - [Assignment Authentication](#assignment-authentication)
 

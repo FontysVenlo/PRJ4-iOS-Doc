@@ -3,7 +3,7 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **PRJ4 iOS/Swift Documentation**
 
-- [HTTP Requests](#http-requests)
+- [Backend/Frontend Example](#backendfrontend-example)
   - [Backend: Employee REST API](#backend-employee-rest-api)
     - [Create the app](#create-the-app)
     - [Create the model](#create-the-model)
@@ -14,8 +14,16 @@
   - [Frontend](#frontend)
     - [URLSession and Alamofire](#urlsession-and-alamofire)
     - [Create the simple GUI](#create-the-simple-gui)
-    - [Simple GET - error/response/data](#simple-get---errorresponsedata)
-    - [JSON](#json)
+    - [HTTP Request - error/response/data](#http-request---errorresponsedata)
+    - [Print JSON](#print-json)
+    - [Decode JSON](#decode-json)
+- [Sensors](#sensors)
+  - [Camera](#camera)
+  - [GPS](#gps)
+  - [Map](#map)
+  - [Push Notification - Frontend](#push-notification---frontend)
+  - [Push Notification - Backend](#push-notification---backend)
+- [Links](#links)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 

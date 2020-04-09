@@ -17,13 +17,18 @@
     - [HTTP Request - error/response/data](#http-request---errorresponsedata)
     - [Print JSON](#print-json)
     - [Decode JSON](#decode-json)
-- [Sensors](#sensors)
+- [Sensors and Notifications](#sensors-and-notifications)
   - [Camera](#camera)
   - [GPS](#gps)
   - [Map](#map)
   - [Push Notification - Frontend](#push-notification---frontend)
   - [Push Notification - Backend](#push-notification---backend)
-- [Links](#links)
+- [Assignments](#assignments)
+  - [Assignment Intro Swift / Basic GUI](#assignment-intro-swift--basic-gui)
+  - [Assignment Sensors and JSON De/Encoding](#assignment-sensors-and-json-deencoding)
+  - [Assignment Push Notification](#assignment-push-notification)
+  - [Assignment HTTP Request](#assignment-http-request)
+  - [Assignment Authentication](#assignment-authentication)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 

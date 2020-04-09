@@ -305,16 +305,22 @@ class ViewController: UIViewController {
 ## GPS
 ## Map
 
-## Push Notification - Frontend
-Push notifications are routed via the *Apple Push Notification* (APN). For usage of APN a certificate is required. In order to be provided with a certificate send the name of your app G<group number><app name> to the PRJ4 coordinator. Example for group 8 is: *G8ProductPriceAlert*.
+## Push Notification - APN
+
+MVJHJ8K8MU
+
+Push notifications are routed via the *Apple Push Notification* (APN). For usage of APN a certificate or a key is required. 
+
+There is a Push Notification Key available *MVJHJ8K8MU* which can be used instead of the certificate: [MVJHJ8K8MU.p8](https://connect.fontys.nl/instituten/fhtenl_studies/studies/INF/APPS/StudyMaterial/AuthKey_MVJHJ8K8MU.p8)
+
+In order to be provided with a certificate send the name of your app G<group number><app name> to the PRJ4 coordinator. Example for group 8 is: *G8ProductPriceAlert*.
 The APP Identifier *nl.fontys.apps20.<group app name> with the corresponding certificate will be created. For the example with group 8 this would be the APP ID *nl.fontys.apps20.G8ProductPriceAlert*.
-When you receive the cerrtificate you have to douvble click it to have it added to your keychain.
-  
-There will also a key provided which can be used instead of the certificate.
+When you receive the certificate it has to be double clicked in order to have it added to your keychain.
+ 
   
 ## Push Notification - Backend
 A node.js module for interfacing with the Apple Push Notification Service is [*apn*](https://www.npmjs.com/package/apn).
-Tutorials and documentation can be foiund on the website.
+Tutorials and documentation can be found on the website.
 
 
 # Assignments

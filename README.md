@@ -294,12 +294,32 @@ class ViewController: UIViewController {
 }
 ```
 
-# Sensors 
+# Sensors and Notifications
 ## Camera
 ## GPS
 ## Map
 ## Push Notification - Frontend
 ## Push Notification - Backend
+
+# Assignments
+
+## Assignment Swift
+
+1. Do in your own playground: [A Swift Tour and LANGUAGE GUIDE (The Basics)](https://docs.swift.org/swift-book/)
+1. Swift Tutorial Part 1: [Expressions, Variables & Constants](https://www.raywenderlich.com/6338-swift-tutorial-part-1-expressions-variables-and-constants)
+1. Swift Tutorial Part 2: [Types and Operations](https://www.raywenderlich.com/6364-swift-tutorial-part-2-types-and-operations)
+1. Swift Tutorial Part 3: [Flow Control](https://www.raywenderlich.com/6366-swift-tutorial-part-3-flow-control)
+• Do the iOS Intro: [Your first iOS App](https://www.raywenderlich.com/5993-your-first-ios-and-uikit-app)
+
+Deliverables:
+1. Being able to explain the basic Swift components
+1. Being able to explain Swift specific constructs like Optionals, Tuples, Protocols, Extensions, Closures and Error Handling.
+1. Being able to explain the basic concepts of an iOS app.
+
+## Assignment Loopback
+## Assignment GUI
+## Assignment HTTP Request
+## Assignment Authentication
 
 # Links
 

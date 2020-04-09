@@ -303,8 +303,18 @@ class ViewController: UIViewController {
 ## Camera
 ## GPS
 ## Map
+
 ## Push Notification - Frontend
+Push notifications are routed via the *Apple Push Notification* (APN). For usage of APN a certificate is required. In order to be provided with a certificate send the name of your app G<group number><app name> to the PRJ4 coordinator. Example for group 8 is: *G8ProductPriceAlert*.
+The APP Identifier *nl.fontys.apps20.<group app name> with the corresponding certificate will be created. For the example with group 8 this would be the APP ID *nl.fontys.apps20.G8ProductPriceAlert*.
+When you receive the cerrtificate you have to douvble click it to have it added to your keychain.
+  
+There will also a key provided which can be used instead of the certificate.
+  
 ## Push Notification - Backend
+A node.js module for interfacing with the Apple Push Notification Service is [*apn*](https://www.npmjs.com/package/apn).
+Tutorials and documentation can be foiund on the website.
+
 
 # Assignments
 
@@ -316,11 +326,13 @@ Do tutorials on the following topics. Either use the given tutorials or use tuto
 1. Swift Tutorial Part 2: [Types and Operations](https://www.raywenderlich.com/6364-swift-tutorial-part-2-types-and-operations)
 1. Swift Tutorial Part 3: [Flow Control](https://www.raywenderlich.com/6366-swift-tutorial-part-3-flow-control)
 1. Do the iOS Intro: [Your first iOS App](https://www.raywenderlich.com/5993-your-first-ios-and-uikit-app)
+1. Check the tutorial on [XCode and Github](https://medium.com/swlh/how-to-use-github-with-xcode11-8a93b64ff1bc)
 
 **Deliverables:**
 1. Being able to explain the basic Swift components
 1. Being able to explain Swift specific constructs like Optionals, Tuples, Protocols, Extensions, Closures and Error Handling.
 1. Being able to explain the basic concepts of an iOS app.
+1. Being able to use Github with your project(s).
 
 ## Assignment Sensors and JSON De/Encoding
 Do tutorials on the following topics. Either use the given tutorials or use tutorial that you come across and think useful.
@@ -339,18 +351,28 @@ Do tutorials on the following topics. Either use the given tutorials or use tuto
 1. JSON: Being able to decode from JSON to an object
 1. JSON: Being able to encode from an object to JSON
 
-## Assignment Push Notification
-Walk through the above given examples. 
+## Assignment Push Notification - Frontend
+Walk through the above given example. 
+
+1. Use the [Pusher Notification binary](https://github.com/onmyway133/PushNotifications) to send push notifications to your app. Follow the documentation and export the certificate as .p12 file from your keychain.
+1. Use the [Wenderlich tutorial](https://www.raywenderlich.com/156966/push-notifications-tutorial-getting-started) but be advised to **use your own app**.
+
 
 **Deliverables**
-1. Being able to receive and work on push notifications on the frontend
-1. Being able to explain how push notifications work on the backend (node.js)
+1. Being able to use the Pusher Notification app to send a push notification and receive/process that notification on the frontend.
+
+## Assignment Push Notification - Backend
+Walk through the documentation given by the [*apn* framework]()
+
+**Deliverables**
+1. Being able how push notifications are implemented/used with the *apn* framework(https://www.npmjs.com/package/apn)).
+
 
 ## Assignment HTTP Request
 Do the Backend/Frontend example from above.
 
 **Deliverables**
-1. Making HTTP Requests with URLSession (or Alamofire)
+1. Being able to make HTTP Requests with URLSession (or Alamofire)
 2. Being able to do (async) unit tests 
 
 ## Assignment Authentication

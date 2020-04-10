@@ -206,7 +206,8 @@ For an introduction into iOS networking and an introduction of *URLSession*, *UR
 
 
 ### Create the simple GUI
-The first step is to create a new iOS single view app. Select the *Most ain.storyboard* and add a button labelled *Get/Employees*. Do this via the *+* sign which is located at the top right of the window.
+The first step is to create a new iOS single view app. Be sure to select *Include Unit Tests*.
+Select the *Main.storyboard* and add a button labelled *Get/Employees*. Do this via the *+* sign which is located at the top right of the window.
 Open the assistant editor via the menu *Editor -> Assistant*. Control drag the button to the *ViewController.swift* file just beneath the class declaration. Configure *Connection: Action, name: getEmployees, type: UIButton*. This defines the *IBAction getEmployees()* which will be called whenever the button is pressed. Inside the function body add *testGetEmployees()*.
 The only thing *getEmployees()* does is call the yet to be defined function *testGetEmployees()*. 
 
@@ -251,6 +252,9 @@ The call to the url is made when *resume()* is called on the task (dataTask). At
         task.resume()
     }
 ```
+
+**Deliverables:**
+1. Being able to make HTTP Requests with URLSession (or Alamofire)
 
 ### Print JSON
 
@@ -313,7 +317,7 @@ class ViewController: UIViewController {
 ### Decode JSON
 Now that we have checked that we receive JSON from the http request, the next step is to convert JSON into an object. For this we use the *Codable* protocol, which covers decoding via the *Decodable* protocol as well as encoding via the *Encodable* protocol. With simple CRUD applications like ours structs are preferred over classes. This is because inheritance does not make much sense and with structs there is much less danger of referring the wrong object. First we define the struct *Employee* as the object structure we want to convert the JSON data into. As for structs the initializer is inferred the *Employee* definition is straightforward.
 
-For details you are referred to the Swift documentation by Apple as well as the good introduction by Wenderlich [Codalbe and JSON in Swift](https://learnappmaking.com/codable-json-swift-how-to/#working-with-nested-arrays-and-codable).
+Regarding JSON De-/Encoding, also have a look at [Working with Codable and JSON in Swift](https://learnappmaking.com/codable-json-swift-how-to/).
 
 ```
 struct Employee: Codable  {
@@ -324,13 +328,14 @@ struct Employee: Codable  {
 }
 ```
 
-The next step is to decode the received JSON into employees. Our example is pretty simple. We decode from data into an Array *[]*. The elements of that array will be employees, hence *[Employee]*. The result will then be an array of *Employees*
+The next step is to decode the received JSON into employees. Our example is pretty simple. We decode from data into an Array *[]*. The elements of that array will be employees, hence *[Employee]*. The result will then be an array of *Employees*. A for loop is used to print the properties of all employees.
 
 ```
 let employees = try JSONDecoder().decode([Employee].self, from: data)
 ```
 
-Be reminded that this is a simplified example. We have to use try because it could be, that something goes wrong during the decoding process, e.g. the struct *Employee* does not correspond the received data. 
+Be reminded that this is a simplified example. We have to use try because something could go wrong during the decoding process, e.g. the struct *Employee* does not correspond to the received data. 
+
 The complete *ViewController.swift* now looks like this:
 
 ```
@@ -366,7 +371,7 @@ class ViewController: UIViewController {
                     
                     // Decode JSON
                     let employees = try JSONDecoder().decode([Employee].self, from: data)
-                    print("Employee")
+                    print("Employees:")
                     for employee in employees {
                         print("id: \(employee.id)")
                         print("firstName: \(employee.firstName)")
@@ -395,13 +400,8 @@ class ViewController: UIViewController {
 }
 ```
 
-## Assignment 
-1. Do the Backend/Frontend example from above.
-1. JSON De-/Encoding: [Working with Codable and JSON in Swift](https://learnappmaking.com/codable-json-swift-how-to/)
 
 **Deliverables:**
-1. Being able to make HTTP Requests with URLSession (or Alamofire)
-1. Being able to do (async) unit tests 
 1. JSON: Being able to decode from JSON to an object
 1. JSON: Being able to encode from an object to JSON
 

@@ -60,7 +60,7 @@ Familiarize yourself with Loopback 4.
 1. Being able to explain the basic Loopback components.
 1. Being able to build a CRUD app witj Loopback.
 
-# IBM Cloud
+# Deploying to IBM Cloud
 
 1. Do the tutorial [Deploying to IBM Cloud](https://loopback.io/doc/en/lb4/Deploying-to-IBM-Cloud.html)
 
@@ -68,9 +68,35 @@ Familiarize yourself with Loopback 4.
 1. Being able to push an app to own IBM Cloud account. 
 
 
+# Authentication
+
+1. Do the authentication tutorial [Loopback Authentication(https://connect.fontys.nl/instituten/fhtenl_studies/studies/INF/APPS/StudyMaterial/Loopback_Authentication.pdf)
+
+**Deliverables**
+1. Being able to explain how authentication works and is implemented. 
+
+
 # Camera
+1. Camera - [Take a photo](https://www.ioscreator.com/tutorials/take-photo-ios-tutorial)
+1. For details have a look at the [Apple Developer Documentation](https://developer.apple.com/documentation/avfoundation/cameras_and_media_capture)
+
+**Deliverables**
+1. Being able to take a photo and store it locally.
+
 # GPS
+1. GPS: Familiarize yourself with *CoreLocation* and *CLLocationManager*.
+
+**Deliverables**
+1. GPS: Being able to get the current position
+1. GPS: Being able to get longitude/latitude from address and vice versa
+
 # Map
+
+1. Show position on map. See *MapKit_Example.playground* on the portal.
+
+**Deliverables**
+1. Being able to show a given position on a map
+
 
 # Push Notification - APN
 
@@ -84,7 +110,7 @@ When you receive the certificate it has to be double clicked in order to have it
  
 For further information on Push Notification - Frontend and/or Push Notification - Backend have a look at the corresponding Assignment.
 
-## Assignment Push Notification - Frontend
+## Push Notification - Frontend
 Walk through the given example tutorials. 
 
 1. Use the [Pusher Notification binary](https://github.com/onmyway133/PushNotifications) to send push notifications to your app. Follow the documentation and export the certificate as .p12 file from your keychain.
@@ -94,44 +120,13 @@ Walk through the given example tutorials.
 **Deliverables**
 1. Being able to use the Pusher Notification app to send a push notification and receive/process that notification on the frontend.
 
-## Assignment Push Notification - Backend
+## Push Notification - Backend
 A node.js module for interfacing with the Apple Push Notification Service is *apn*. Tutorials and documentation can be found on the website.
 
 1. Walk through the documentation given by the [*apn* framework](https://www.npmjs.com/package/apn).
 
 **Deliverables**
 1. Being able to explain how push notifications are implemented/used with the *apn* framework.
-
-
-## Assignment Sensors and JSON De/Encoding
-Do tutorials on the following topics. Either use the given tutorials or use tutorial that you come across and think useful.
-
-1. Camera - [Take a photo](https://www.ioscreator.com/tutorials/take-photo-ios-tutorial)
-1. For details have a look at the [Apple Developer Documentation](https://developer.apple.com/documentation/avfoundation/cameras_and_media_capture)
-1. Maps: Show position on map. See *MapKit_Example.playground* on the portal.
-1. GPS: Familiarize yourself with *CoreLocation* and *CLLocationManager*.
-
-
-**Deliverables**
-1. Camera: Being able to take a photo
-1. Map: Being able to show a given position on a map
-1. GPS: Being able to get the current position
-1. GPS: Being able to get longitude/latitude from address and vice versa
-
-
-
-
-
-
-
-## Assignment Authentication
-Do tutorials on the following topics. Either use the given tutorials or use tutorial that you come across and think useful.
-
-1. Do the authentication tutorial [Loopback Authentication(https://connect.fontys.nl/instituten/fhtenl_studies/studies/INF/APPS/StudyMaterial/Loopback_Authentication.pdf)
-
-**Deliverables**
-1. Being able to explain how authentication works and is implemented. 
-
 
 
 # Backend/Frontend Example
@@ -401,7 +396,7 @@ class ViewController: UIViewController {
 }
 ```
 
-## Assignment HTTP Request/Unit tests
+## Assignment 
 1. Do the Backend/Frontend example from above.
 1. JSON De-/Encoding: [Working with Codable and JSON in Swift](https://learnappmaking.com/codable-json-swift-how-to/)
 

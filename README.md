@@ -27,7 +27,6 @@
     - [HTTP Request - error/response/data](#http-request---errorresponsedata)
     - [Print JSON](#print-json)
     - [Decode JSON](#decode-json)
-  - [Assignment](#assignment)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 

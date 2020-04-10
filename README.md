@@ -3,6 +3,17 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **PRJ4 iOS/Swift Documentation**
 
+- [Intro Swift / Basic GUI](#intro-swift--basic-gui)
+- [Loopback 4](#loopback-4)
+- [IBM Cloud](#ibm-cloud)
+- [Camera](#camera)
+- [GPS](#gps)
+- [Map](#map)
+- [Push Notification - APN](#push-notification---apn)
+  - [Assignment Push Notification - Frontend](#assignment-push-notification---frontend)
+  - [Assignment Push Notification - Backend](#assignment-push-notification---backend)
+  - [Assignment Sensors and JSON De/Encoding](#assignment-sensors-and-json-deencoding)
+  - [Assignment Authentication](#assignment-authentication)
 - [Backend/Frontend Example](#backendfrontend-example)
   - [Backend: Employee REST API](#backend-employee-rest-api)
     - [Create the app](#create-the-app)
@@ -17,19 +28,7 @@
     - [HTTP Request - error/response/data](#http-request---errorresponsedata)
     - [Print JSON](#print-json)
     - [Decode JSON](#decode-json)
-- [Sensors and Notifications](#sensors-and-notifications)
-  - [Camera](#camera)
-  - [GPS](#gps)
-  - [Map](#map)
-  - [Push Notification - APN](#push-notification---apn)
-  - [Push Notification - Backend](#push-notification---backend)
-- [Assignments](#assignments)
-  - [Assignment Intro Swift / Basic GUI](#assignment-intro-swift--basic-gui)
-  - [Assignment Sensors and JSON De/Encoding](#assignment-sensors-and-json-deencoding)
-  - [Assignment Push Notification - Frontend](#assignment-push-notification---frontend)
-  - [Assignment Push Notification - Backend](#assignment-push-notification---backend)
-  - [Assignment HTTP Request](#assignment-http-request)
-  - [Assignment Authentication](#assignment-authentication)
+  - [Assignment HTTP Request/Unit tests](#assignment-http-requestunit-tests)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 

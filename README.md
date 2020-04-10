@@ -55,7 +55,7 @@ Familiarize yourself with Loopback 4.
 1. Do the [Todo tutorial](https://loopback.io/doc/en/lb4/todo-tutorial.html)
 1. Do the [TodoList tutorial](https://loopback.io/doc/en/lb4/todo-list-tutorial.html)
 
-**Deliverables**
+**Deliverables:**
 1. Being able to explain the basic Loopback components.
 1. Being able to build a CRUD app witj Loopback.
 
@@ -63,15 +63,15 @@ Familiarize yourself with Loopback 4.
 
 1. Do the tutorial [Deploying to IBM Cloud](https://loopback.io/doc/en/lb4/Deploying-to-IBM-Cloud.html)
 
-**Deliverables**
+**Deliverables:**
 1. Being able to push an app to own IBM Cloud account. 
 
 
 # Authentication
 
-1. Do the authentication tutorial [Loopback Authentication(https://connect.fontys.nl/instituten/fhtenl_studies/studies/INF/APPS/StudyMaterial/Loopback_Authentication.pdf)
+1. Do the authentication tutorial [Loopback Authentication](https://connect.fontys.nl/instituten/fhtenl_studies/studies/INF/APPS/StudyMaterial/Loopback_Authentication.pdf)
 
-**Deliverables**
+**Deliverables:**
 1. Being able to explain how authentication works and is implemented. 
 
 
@@ -79,13 +79,13 @@ Familiarize yourself with Loopback 4.
 1. Camera - [Take a photo](https://www.ioscreator.com/tutorials/take-photo-ios-tutorial)
 1. For details have a look at the [Apple Developer Documentation](https://developer.apple.com/documentation/avfoundation/cameras_and_media_capture)
 
-**Deliverables**
+**Deliverables:**
 1. Being able to take a photo and store it locally.
 
 # GPS
 1. GPS: Familiarize yourself with *CoreLocation* and *CLLocationManager*.
 
-**Deliverables**
+**Deliverables:**
 1. GPS: Being able to get the current position
 1. GPS: Being able to get longitude/latitude from address and vice versa
 
@@ -93,7 +93,7 @@ Familiarize yourself with Loopback 4.
 
 1. Show position on map. See *MapKit_Example.playground* on the portal.
 
-**Deliverables**
+**Deliverable:s**
 1. Being able to show a given position on a map
 
 
@@ -103,7 +103,7 @@ Push notifications are routed via the *Apple Push Notification* (APN). For usage
 
 There is a Push Notification Key available *MVJHJ8K8MU* which can be used instead of the certificate: [MVJHJ8K8MU.p8](https://connect.fontys.nl/instituten/fhtenl_studies/studies/INF/APPS/StudyMaterial/AuthKey_MVJHJ8K8MU.p8)
 
-In order to be provided with a certificate send the name of your app G<group number><app name> to the PRJ4 coordinator. Example for group 8 is: *G8ProductPriceAlert*.
+In order to be provided with a certificate send the name of your app *G<group number><app name>* to the PRJ4 coordinator. Example for group 8 is: *G8ProductPriceAlert*.
 The APP Identifier *nl.fontys.apps20.<group app name> with the corresponding certificate will be created. For the example with group 8 this would be the APP ID *nl.fontys.apps20.G8ProductPriceAlert*.
 When you receive the certificate it has to be double clicked in order to have it added to your keychain.
  
@@ -116,7 +116,7 @@ Walk through the given example tutorials.
 1. Use the [Wenderlich tutorial](https://www.raywenderlich.com/156966/push-notifications-tutorial-getting-started) but be advised to **use your own app**.
 
 
-**Deliverables**
+**Deliverables:**
 1. Being able to use the Pusher Notification app to send a push notification and receive/process that notification on the frontend.
 
 ## Push Notification - Backend
@@ -124,7 +124,7 @@ A node.js module for interfacing with the Apple Push Notification Service is *ap
 
 1. Walk through the documentation given by the [*apn* framework](https://www.npmjs.com/package/apn).
 
-**Deliverables**
+**Deliverables:**
 1. Being able to explain how push notifications are implemented/used with the *apn* framework.
 
 
@@ -399,7 +399,7 @@ class ViewController: UIViewController {
 1. Do the Backend/Frontend example from above.
 1. JSON De-/Encoding: [Working with Codable and JSON in Swift](https://learnappmaking.com/codable-json-swift-how-to/)
 
-**Deliverables**
+**Deliverables:**
 1. Being able to make HTTP Requests with URLSession (or Alamofire)
 1. Being able to do (async) unit tests 
 1. JSON: Being able to decode from JSON to an object

@@ -50,7 +50,14 @@ Do tutorials on the following topics. Either use the given tutorials or use tuto
 1. Being able to use Github with your project(s).
 
 # Loopback 4
-Familiarize yourself with Loopback 4. 
+Familiarize yourself with Loopback 4. Standard Loopback directories are 
+
+* Controllers: ./src/controllers
+* Datasources: ./src/datasources
+* Models: ./src/models
+* Repositories: ./src/repositories
+
+Be careful, in the *Todo* and *TodoList* tutorials some paths are named wrongly. 
 
 1. Do [TypeScript in 5 minutes](https://www.typescriptlang.org/docs/home.html)
 1. Have a look at the first page of [Loopback key concepts](https://loopback.io/doc/en/lb4/Getting-started.html)

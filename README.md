@@ -88,7 +88,7 @@ Clone the example and work on that (*lb4 example todo*):
 * Login, have IBM Cloud login credentials ready: *cf login*
 * Push the application to the cloud, set memory constraints to 256 MB or 512 MB: *cf push <<your-app-name>> -m256MB*
 
-** Push to IBM Cloud - Errors**
+**Push to IBM Cloud - Errors**
 * Errors about Org and Space – Check on endpoint and region
 * Errors about Route – Check on unique route (api endpoint + app name)
 * App does not start in IBM Cloud / memory errors / TCP connection error

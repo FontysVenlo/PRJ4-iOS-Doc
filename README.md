@@ -480,3 +480,12 @@ Now that the decoding worked, we check *employee id*, *firstName* and *lastName*
       XCTFail("No data")
   }
 ```
+
+Still within the method body but the last step of the method is to indicate that we test async code and have to wait for the previosly defined expectation.
+
+```
+  // 4. Don't forget to fulfill the expectation in the async callback
+  expect.fulfill()
+```
+
+

@@ -2,7 +2,6 @@
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **PRJ4 iOS/Swift Documentation**
-This is an introduction into the PRJ4 topics (iOS section). The examples given will provide you with a good starting point. Do not forget, it is your task to elaborate on these topics in the group phase, when you develop your app.
 
 - [Intro Swift / Basic GUI](#intro-swift--basic-gui)
 - [Loopback 4](#loopback-4)
@@ -28,6 +27,7 @@ This is an introduction into the PRJ4 topics (iOS section). The examples given w
     - [HTTP Request - error/response/data](#http-request---errorresponsedata)
     - [Print JSON](#print-json)
     - [Decode JSON](#decode-json)
+    - [Async Unit Testing](#async-unit-testing)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 

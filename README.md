@@ -413,12 +413,35 @@ In Xcode select *File -> New -> File -> Unit Test Class* and name it *EmployeeHT
 
 ![ScreenShot](/loopback4/xcodeTestClass.png)
 
-Here we add a new method *testEmployeeGet*. We want to test the GET of a specific employee. First let's have a look at how the *Curl* of the *API Explorer* looks:
+We then need to import the test module *XCTest*. We also need to state that we want to test *EmployeeExample*.
+```
+  import XCTest
+  @testable import EmployeeExample
+```
+
+We add a new method *testEmployeeGet* to the class *EmployeeHTTPTests*. We want to test the GET of a specific employee.
+
+As we want to test an async operation we first need to define a so called *expectation*. This expection is used to have the test informed that it has to wait for the async operation to complete, i.e. the test has at least to wait a given time in case the operation does not complete.
+
+```
+  // 1. Define an expectation
+  let expect = expectation(description: "Request and run callback closure")
+```
+
+Next we define the *URLSession* that we will use for networking, as well as the *URL*. First let's have a look at how the *Curl* of the *API Explorer* looks:
 
 ```
   curl -X GET "http://[::1]:3000/employees/1?filter[offset]=0&filter[limit]=100&filter[skip]=0" -H "accept: application/json"
 ```
 
 We are not interested in the listed filter options, hence our url is *http://[::1]:3000/employees/1?*
+
+```
+   // 2. Define session and url
+   let defaultSession = URLSession(configuration: .default)
+   let url = URL(string: "http://[::1]:3000/employees/1?")
+```
+
+Now is the point to define the task in which we cover the HTTP request.
 
 

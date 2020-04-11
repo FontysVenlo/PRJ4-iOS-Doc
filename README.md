@@ -405,6 +405,20 @@ class ViewController: UIViewController {
 1. JSON: Being able to encode from an object to JSON
 
 
+### Async Unit Testing
 
+As you selected *Include Unit Tests* when you created the XCode project, there will be a ddirectory *EmployeeExampleTests* with the file *EmployeeExampleTests.swift* in it. Stubs for standard unit testing methods have been created, e.g. for setup and teardown. Good practice is to create a test class for each implementation class, and have in the test class a test method for each of the implementation's class' methods. In the given simple example that does not make any sense. What we do instead is to create a new test class *EmployeeHTTPTests* with the method *testEmployeeGet()* in it to test the async call to our backend.
+
+In Xcode select *File -> New -> File -> Unit Test Class* and name it *EmployeeHTTPTests*. In the window that then opens accept what is preselected and choose create. You should see the added test class to the left of your XCode window.
+
+![ScreenShot](/loopback4/xcodeTestClass.png)
+
+Here we add a new method *testEmployeeGet*. We want to test the GET of a specific employee. First let's have a look at how the *Curl* of the *API Explorer* looks:
+
+```
+  curl -X GET "http://[::1]:3000/employees/1?filter[offset]=0&filter[limit]=100&filter[skip]=0" -H "accept: application/json"
+```
+
+We are not interested in the listed filter options, hence our url is *http://[::1]:3000/employees/1?*
 
 

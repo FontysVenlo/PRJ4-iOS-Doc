@@ -31,6 +31,8 @@
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
+This is a starting point to familiarize with the different PRJ4 topics (iOS group). Please be reminded that during the groups based app development phase, students are expected to elaborate on these topics.   
+
 # Intro Swift / Basic GUI
 Do tutorials on the following topics. Either use the given tutorials or use tutorials that you come across and think useful.
 

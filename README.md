@@ -459,3 +459,24 @@ Now is the point to define the task in which we cover the HTTP request. We use a
   // Forced unwrap of url - we set it ourselves
   let task = defaultSession.dataTask(with: url!) { data, response, error in
 ```
+
+First we need to test whether data has been received. If that is not the case we go to the else branch and give an *XCTFAil* with the message that there is no data. If data has been received we decode the JSON to the struct *Employee*. In case that fails we do the catch block with again giving an *XCTFAil* with the corresponding error. 
+Now that the decoding worked, we check *employee id*, *firstName* and *lastName* on correctness. If one of them is wrong, an *XCGTFail* will be given.
+
+```
+  // Check data
+  if let data = data  {
+      // Decode JSON
+      let decoder = JSONDecoder()
+      do {
+        let employee = try decoder.decode(Employee.self, from: data)
+        XCTAssert(employee.id == 1, "Wrong employee id")
+        XCTAssert(employee.firstName == "Jan", "Wrong employee firstName")
+        XCTAssert(employee.lastName == "Holland", "Wrong employee lastName")
+      } catch {
+        XCTFail(error.localizedDescription)
+      }
+  } else {
+      XCTFail("No data")
+  }
+```

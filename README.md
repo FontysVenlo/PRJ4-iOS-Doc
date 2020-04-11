@@ -481,11 +481,18 @@ Now that the decoding worked, we check *employee id*, *firstName* and *lastName*
   }
 ```
 
-Still within the method body but the last step of the method is to indicate that we test async code and have to wait for the previosly defined expectation.
+Still within the task but the last step of it, is to indicate that we test async code and have to wait for the previosly defined expectation.
 
 ```
   // 4. Don't forget to fulfill the expectation in the async callback
   expect.fulfill()
+```
+
+The last step of the test method is to start the task.
+
+```
+  // 5. Run the tast
+  task.resume()
 ```
 
 

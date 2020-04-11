@@ -452,6 +452,10 @@ We are not interested in the listed filter options, hence our url is *http://[::
    let url = URL(string: "http://[::1]:3000/employees/1?")
 ```
 
-Now is the point to define the task in which we cover the HTTP request.
+Now is the point to define the task in which we cover the HTTP request. We use a default URLSession and a dataTask with our url.
 
-
+```
+  // 3. Define the task
+  // Forced unwrap of url - we set it ourselves
+  let task = defaultSession.dataTask(with: url!) { data, response, error in
+```

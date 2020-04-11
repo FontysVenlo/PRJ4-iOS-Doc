@@ -196,6 +196,15 @@ Use the API Explorer at *http://[::1]:3000* to get a feeling for the API. With P
 an employee is added. The test is done via GET/employees and shows the new employee.
 ![ScreenShot](/loopback4/apiExplorerGetEmployees.png)
 
+Try the app and test teh *API Explorer*. Be carefule with the *Parameters* as especially 
+
+```
+  "order": [
+    "string"
+  ]
+```  
+can sometimes lead to errors. In that case remove this code from *filter* (including the preceding *,*).  
+
 ## Frontend
 
 ### URLSession and Alamofire

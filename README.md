@@ -488,11 +488,21 @@ Still within the task but the last step of it, is to indicate that we test async
   expect.fulfill()
 ```
 
-The last step of the test method is to start the task.
+The second to last step of the test method is to start the task.
 
 ```
   // 5. Run the tast
   task.resume()
 ```
 
+And the last step is to wait on the expectation. If there is an error or there is no answer within the given time, in this example it is 4 seconds, an *XCFail* will be given with the corresponding error.
 
+```
+  // 6. Wait for the expectation to be fulfilled
+  waitForExpectations(timeout: 4) {
+      error in if let error = error {
+           XCTFail("Error \(error)")
+      }
+   }
+
+Play around with the test. Run it without having the backend app started, try it with a wrong url, try it for non existing data etc.

@@ -411,8 +411,8 @@ class ViewController: UIViewController {
 
 
 **Deliverables:**
-1. JSON: Being able to decode from JSON to an object
-1. JSON: Being able to encode from an object to JSON
+1. Being able to decode from JSON to an object
+1. Being able to encode from an object to JSON
 
 
 ### Async Unit Testing
@@ -491,7 +491,7 @@ Still within the task but the last step of it, is to indicate that we test async
 The second to last step of the test method is to start the task.
 
 ```
-  // 5. Run the tast
+  // 5. Run the task
   task.resume()
 ```
 
@@ -504,5 +504,11 @@ And the last step is to wait on the expectation. If there is an error or there i
            XCTFail("Error \(error)")
       }
    }
+```
 
 Play around with the test. Run it without having the backend app started, try it with a wrong url, try it for non existing data etc.
+
+
+**Deliverables:**
+1. Being able to explain/do unit testing with XCode/Swift
+1. Being able to explain/do async unit testing with XCode/Swift

@@ -52,6 +52,7 @@ Do tutorials on the following topics. Either use the given tutorials or use tuto
 # Loopback 4
 Familiarize yourself with Loopback 4. 
 
+1. Do [TypeScript in 5 minutes](https://www.typescriptlang.org/docs/home.html)
 1. Have a look at the first page of [Loopback key concepts](https://loopback.io/doc/en/lb4/Getting-started.html)
 1. Do the [Getting started tutorial](https://loopback.io/doc/en/lb4/Getting-started.html)
 1. Do the [Todo tutorial](https://loopback.io/doc/en/lb4/todo-tutorial.html)

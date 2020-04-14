@@ -127,7 +127,7 @@ Clone the example and work on that (*lb4 example todo*):
 
 # Map
 
-1. Show position on map. See *MapKit_Example.playground* on the portal.
+1. Show position on map. See [MapKit_Example.playground](https://connect.fontys.nl/instituten/fhtenl_studies/studies/INF/APPS/StudyMaterial/MapKit_Example.playground.zip) on the portal.
 
 **Deliverable:s**
 1. Being able to show a given position on a map

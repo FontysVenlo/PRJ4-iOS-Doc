@@ -87,7 +87,7 @@ A node.js module for interfacing with the Apple Push Notification Service is *ap
 
 1. Do the authentication tutorial [Loopback Authentication](https://connect.fontys.nl/instituten/fhtenl_studies/studies/INF/APPS/StudyMaterial/Loopback_Authentication.pdf)
 
-Since the setup of the authentication example there have been dependency changes, such that there are some update signatures, parameters and return values for methods related to authentication. This can be helped with the package.json from the example, which you can find at [loopback/authentication_package.json](loopback/authentication_package.json).
+Since the setup of the authentication example there have been dependency changes, such that there are some update signatures, parameters and return values for methods related to authentication. This can be helped with the package.json from the example, which you can find at [loopback/authentication_package.json](loopback4/authentication_package.json).
 
 **Deliverables:**
 1. Being able to explain how authentication works and is implemented. 

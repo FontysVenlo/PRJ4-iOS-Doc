@@ -4,10 +4,11 @@
 **PRJ4 iOS/Swift Documentation**
 
 - [Intro Swift / Basic GUI](#intro-swift--basic-gui)
-- [Loopback 4](#loopback-4)
+- [Backend: Loopback 4 - IBM Cloud](#backend-loopback-4---ibm-cloud)
+  - [Loopback 4 - Basics](#loopback-4---basics)
   - [Push Notification - Backend](#push-notification---backend)
   - [Authentication - Backend](#authentication---backend)
-- [Deploying to IBM Cloud](#deploying-to-ibm-cloud)
+  - [Deploying to IBM Cloud](#deploying-to-ibm-cloud)
 - [Camera](#camera)
 - [GPS](#gps)
 - [Map](#map)
@@ -50,7 +51,7 @@ Do tutorials on the following topics. Either use the given tutorials or use tuto
 1. Being able to explain the basic concepts of an iOS app.
 1. Being able to use Github with your project(s).
 
-# Loopback 4
+# Backend: Loopback 4 - IBM Cloud
 
 ## Loopback 4 - Basics
 Familiarize yourself with Loopback 4. Standard Loopback directories are 
@@ -93,7 +94,7 @@ Since the setup of the authentication example there have been dependency changes
 
 
 
-# Deploying to IBM Cloud
+## Deploying to IBM Cloud
 
 Clone the example and work on that (*lb4 example todo*):
 

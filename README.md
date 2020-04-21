@@ -5,14 +5,15 @@
 
 - [Intro Swift / Basic GUI](#intro-swift--basic-gui)
 - [Loopback 4](#loopback-4)
+  - [Push Notification - Backend](#push-notification---backend)
+  - [Authentication - Backend](#authentication---backend)
 - [Deploying to IBM Cloud](#deploying-to-ibm-cloud)
-- [Authentication](#authentication)
 - [Camera](#camera)
 - [GPS](#gps)
 - [Map](#map)
-- [Push Notification - APN](#push-notification---apn)
+- [Push Notification](#push-notification)
+  - [Push Notification - APN](#push-notification---apn)
   - [Push Notification - Frontend](#push-notification---frontend)
-  - [Push Notification - Backend](#push-notification---backend)
 - [Backend/Frontend Example](#backendfrontend-example)
   - [Backend: Employee REST API](#backend-employee-rest-api)
     - [Create the app](#create-the-app)
@@ -69,6 +70,27 @@ Be careful, in the *Todo* and *TodoList* tutorials some paths are named wrongly.
 1. Being able to explain the basic Loopback components.
 1. Being able to build a CRUD app witj Loopback.
 
+## Push Notification - Backend
+A node.js module for interfacing with the Apple Push Notification Service is *apn*. Tutorials and documentation can be found on the website.
+
+1. Walk through the documentation given by the [*apn* framework](https://www.npmjs.com/package/apn).
+
+**Deliverables:**
+1. Being able to explain how push notifications are implemented/used with the *apn* framework.
+
+
+
+## Authentication - Backend
+
+1. Do the authentication tutorial [Loopback Authentication](https://connect.fontys.nl/instituten/fhtenl_studies/studies/INF/APPS/StudyMaterial/Loopback_Authentication.pdf)
+
+Since the setup of the authentication example there have been dependency changes, such that there are some update signatures, parameters and return values for methods related to authentication. This can be helped with the [package.json used with the example](/loopback/authentication_package.json).
+
+**Deliverables:**
+1. Being able to explain how authentication works and is implemented. 
+
+
+
 # Deploying to IBM Cloud
 
 Clone the example and work on that (*lb4 example todo*):
@@ -103,14 +125,6 @@ Clone the example and work on that (*lb4 example todo*):
 1. Being able to push an app to own IBM Cloud account. 
 
 
-# Authentication
-
-1. Do the authentication tutorial [Loopback Authentication](https://connect.fontys.nl/instituten/fhtenl_studies/studies/INF/APPS/StudyMaterial/Loopback_Authentication.pdf)
-
-**Deliverables:**
-1. Being able to explain how authentication works and is implemented. 
-
-
 # Camera
 1. Camera - [Take a photo](https://www.ioscreator.com/tutorials/take-photo-ios-tutorial)
 1. For details have a look at the [Apple Developer Documentation](https://developer.apple.com/documentation/avfoundation/cameras_and_media_capture)
@@ -132,8 +146,9 @@ Clone the example and work on that (*lb4 example todo*):
 **Deliverable:s**
 1. Being able to show a given position on a map
 
+# Push Notification
 
-# Push Notification - APN
+## Push Notification - APN
 
 Push notifications are routed via the *Apple Push Notification* (APN). For usage of APN a certificate or a key is required. 
 
@@ -154,14 +169,6 @@ Walk through the given example tutorials.
 
 **Deliverables:**
 1. Being able to use the Pusher Notification app to send a push notification and receive/process that notification on the frontend.
-
-## Push Notification - Backend
-A node.js module for interfacing with the Apple Push Notification Service is *apn*. Tutorials and documentation can be found on the website.
-
-1. Walk through the documentation given by the [*apn* framework](https://www.npmjs.com/package/apn).
-
-**Deliverables:**
-1. Being able to explain how push notifications are implemented/used with the *apn* framework.
 
 
 # Backend/Frontend Example

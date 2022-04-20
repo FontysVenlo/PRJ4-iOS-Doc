@@ -52,7 +52,7 @@ Do tutorials on the following topics. Either use the given tutorials or use tuto
 1. Being able to use Github with your project(s).
 
 # Backend: Loopback 4 - IBM Cloud
-
+ 
 ## Loopback 4 - Basics
 Familiarize yourself with Loopback 4. Standard Loopback directories are 
 
